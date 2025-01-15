@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SceneScroll : MonoBehaviour
+public class ScrollScene : MonoBehaviour
 {
     public float scrollSpeed = 10f;
     public float minX = -10f;
@@ -16,4 +16,5 @@ public class SceneScroll : MonoBehaviour
         transform.position = newPosition;
     }
 }
+
 

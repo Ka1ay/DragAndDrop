@@ -28,7 +28,7 @@ public class PlaceOnShelf : MonoBehaviour
         rb.bodyType = RigidbodyType2D.Dynamic;
         isDragging = false;
 
-        
+
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.zero);
         if (hit.collider != null && hit.collider.CompareTag("Shelf"))
         {
@@ -43,5 +43,6 @@ public class PlaceOnShelf : MonoBehaviour
         return Camera.main.ScreenToWorldPoint(mouseScreenPosition);
     }
 }
+
 
 
